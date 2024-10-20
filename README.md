@@ -1,36 +1,21 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Learning Next.js routing
 
-## Getting Started
+This repository is a hands-on project where I am learning and experimenting with **Next.js routing**.
 
-First, run the development server:
+## Route Mapping
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This diagram shows how the folder structure maps to the routing system in the browser:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![nextjs-routing_](https://github.com/user-attachments/assets/469daa23-db03-48bb-ac82-46eaaa723448)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Folder Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Folder structure of my Next.js app, which illustrates the organization of routes:
 
-## Learn More
+![nextrouting](https://github.com/user-attachments/assets/44c32535-c749-4dc5-a5a8-7eb5c7f21b1d)
 
-To learn more about Next.js, take a look at the following resources:
+## Key Concepts
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Dynamic Routing**: Routes like `/products/[productId]` and `/products/[productId]/reviews/[reviewId]` are dynamically handled based on the folder and file structure.
+- **Grouped Routes**: The authentication-related routes are grouped under `(authgrouped)` for better organization.
+- **Nested Routes**: Nested routes are used for reviews under products, such as `/products/[productId]/reviews/[reviewId]`.
